@@ -1,7 +1,8 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { navItems } from '../constant/data'
 
 const Header = () => {
+    const [isOpen,setIsopen] = useState(false)
   return (
     <header className='header'>
         <div className="container flex items-center justify-between">
@@ -36,9 +37,10 @@ const Header = () => {
                     ))}
                 </ul>
                 {/* menu btn */}
-                <button className="lg:hidden relative h-7 w-8 flex items-center justify-center">
-                    <span className=""></span>
-                    <span className=""></span>
+                <button className="lg:hidden relative h-7 w-8 flex items-center justify-center" onClick={()=> setIsopen(!isOpen)}>
+                    <span className={`bg-white absolute w-7 h-0.5  rounded-2xl transition-all duration-300 ${isOpen ? "rotate-45 top-1/2" : "top-[6px]"}`}></span>
+                    <span className={`bg-white absolute w-7 h-0.5  rounded-2xl transition-all duration-300  ${isOpen ? "-rotate-45 top-1/2" : "top-[14px]"}`}></span>
+                    
                 </button>
         </div>
     </header>
