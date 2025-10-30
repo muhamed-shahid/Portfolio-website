@@ -10,9 +10,9 @@ const Header = () => {
             <a href="#" className='text-3xl font-semibold'>Shahid</a>
 
             {/* Mobile menu */}
-            <nav className='lg:hidden absolute top-0 left-0 
+            <nav className={`lg:hidden absolute top-0 left-0 
             bg-secondary-clr/70 w-full backdrop-blur-2xl max-h-0
-            overflow-hidden mt-20 flex items-center justify-center z-20'>
+            overflow-hidden mt-20 flex items-center justify-center transition-[max-height] duration-300 z-20 ${isOpen ? "max-h-[500px] overflow-auto": ""}`}>
                 <ul className='text-center space-y-6 p-7'>
                     {navItems.map(item=>(
                         <li key={item.id}>
