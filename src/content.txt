@@ -3,7 +3,7 @@ Hi,I'm Muhamed Shahid.
 
 Web Developer
 
-I'm Muhamed Shahid, a frontend developer who architects seamless digital experiences through innovative code and intuitive design. With expertise in cutting-edge technologies and a passion for performance optimization, I transform complex business requirements into scalable, user-centric applications that drive meaningful engagement.
+I'm Muhamed Shahid, a motivated frontend developer specializing in React. With a strong foundation in JavaScript and modern web technologies, I aim to design scalable and user-friendly interfaces. My portfolio project reflects my journey of learning, problem-solving, and building impactful web solutions.
 
 Download CV
 
