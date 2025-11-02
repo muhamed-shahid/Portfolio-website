@@ -1,15 +1,18 @@
 import React from 'react'
 import { heroIcons } from '../constant/data'
 import Button from './Button'
+import { BackgroundGradient } from './ui/BackgroundGradient'
 
 const Hero = () => {
   return (
     <section className='py-28 lg:pt-40'>
         <div className="container flex flex-col items-center">
             {/* image */}
+            <BackgroundGradient className="w-70 h-70 lg:w-80 lg:h-80 rounded-full bg-zinc-900">
             <figure className='rounded-full overflow-hidden'>
                 <img src="/images/hero-img.png" alt="Muhamed Shahid"  width={452} height={452}/>
             </figure>
+            </BackgroundGradient>
             <div className='text-center mt-8'>
               <h1 className='text-3xl lg:text-5xl mb-1.5 font-bold'>Hi,I'm Muhamed Shahid.</h1>
               <h2>Web Developer</h2>
@@ -24,7 +27,7 @@ const Hero = () => {
               </div>
               {/* btn wrapper */}
               <div className="mt-10 flex items-center justify-center flex-wrap gap-5">
-                <Button label="Download CV" classes="primary-btn"/>
+                <Button label="Download CV" classes="primary-btn" icon/>
                 <Button label="Let's Collaborate" classes="secondary-btn"/>
               </div>
             </div>
