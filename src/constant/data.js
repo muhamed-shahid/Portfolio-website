@@ -50,11 +50,11 @@ export const heroIcons = [
 export const aboutItems = [
   {
     id: 1,
-    label: "React & Next.js development",
+    label: "React.js & Frontend Development",
   },
   {
     id: 2,
-    label: "TypeScript & JavaScript (ES6+)",
+    label: "Version Control (Git & GitHub)",
   },
   {
     id: 3,
@@ -66,7 +66,7 @@ export const aboutItems = [
   },
   {
     id: 5,
-    label: "Performance optimization",
+    label: "UI/UX Fundamentals & Problem Solving",
   },
 ];
 
