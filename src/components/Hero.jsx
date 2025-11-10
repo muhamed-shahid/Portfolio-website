@@ -10,7 +10,7 @@ const Hero = () => {
             {/* image */}
             <BackgroundGradient className="w-70 h-70 lg:w-80 lg:h-80 rounded-full bg-zinc-900">
             <figure className='rounded-full overflow-hidden'>
-                <img src="/images/hero-img.png" alt="Muhamed Shahid"  width={452} height={452}/>
+                <img src="/images/avatar.png" alt="Muhamed Shahid"  width={452} height={452}/>
             </figure>
             </BackgroundGradient>
             <div className='text-center mt-8'>
