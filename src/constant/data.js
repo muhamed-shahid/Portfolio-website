@@ -75,21 +75,17 @@ export const ResumeItems = [
     id: 1,
     title: "Experience",
     list: [
-      {
-        role: "Senior Frontend Developer",
-        label: "TechCorp",
-        time: "2022-Present",
-      },
-      {
-        label: "StartupXYZ",
+            {
         role: "Frontend Developer",
-        time: "2020-2022",
+        label: "Self-initiated",
+        time: "2025-Present",
       },
-      {
-        label: "WebAgency",
-        role: "Junior Developer",
-        time: "2019-2020",
+            {
+        role: "Academic Project",
+        label: "Riss Technologies",
+        time: "2024-2025",
       },
+      
     ],
   },
   {
@@ -97,15 +93,13 @@ export const ResumeItems = [
     title: "Education",
     list: [
       {
-        label: "University of California",
-        role: "Computer Science Degree",
-        time: "2019",
+        label: "Kannur University",
+        role: "Bachelor of Computer Application",
+        time: "2025",
       },
-      {
-        label: "Meta",
-        role: "React Developer Certification",
-        time: "2022",
-      },
+
+      
+      
     ],
   },
 ];
