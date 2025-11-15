@@ -107,27 +107,27 @@ export const ResumeItems = [
 export const ProjectsItems = [
   {
     id: 1,
-    title: "Porfolio 1",
-    src: "/images/portfolio-1.png",
-    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur temporibus asperiores, quia adipisci repellendus",
+    title: "Portfolio Website",
+    src: "/images/portfolio.jpg",
+    text: "A responsive portfolio website built with React to showcase projects, skills, and experience in a clean, modern UI. Features smooth navigation, reusable components, and dynamic content rendering. Designed to highlight personal branding and provide a seamless user experience.",
   },
   {
     id: 2,
-    title: "Porfolio 2",
-    src: "/images/portfolio-2.png",
-    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur temporibus asperiores, quia adipisci repellendus",
+    title: "To-do List App",
+    src: "/images/todo.png",
+    text: "A clean and interactive To-Do List app built using vanilla JavaScript. It allows users to add, edit, delete, and mark tasks as completed. Tasks are stored in localStorage so the list stays saved even after refreshing.",
   },
   {
     id: 3,
-    title: "Porfolio 3",
-    src: "/images/portfolio-3.png",
-    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur temporibus asperiores, quia adipisci repellendus",
+    title: "Coffee Website",
+    src: "/images/coffee.jpg",
+    text: "A visually appealing coffee website created with HTML, CSS, and JavaScript. Includes a dynamic menu, animated elements, and interactive features like a mobile-friendly navigation bar. Focused on aesthetics and smooth user interaction.",
   },
   {
     id: 4,
-    title: "Porfolio 4",
-    src: "/images/portfolio-4.png",
-    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur temporibus asperiores, quia adipisci repellendus",
+    title: "Weather App",
+    src: "/images/weatherapp.png",
+    text: "A lightweight JavaScript weather app that provides instant weather information using fetch API. Includes error handling, city search, and a minimal, user-friendly interface. Optimized for fast performance and smooth experience.",
   },
 ];
 
