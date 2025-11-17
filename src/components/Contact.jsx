@@ -1,0 +1,63 @@
+import React from 'react'
+import { contactItems } from '../constant/data'
+import { RiGithubFill, RiLinkedinBoxFill } from '@remixicon/react'
+
+const Contact = () => {
+  return (
+    <section className='py-20'>
+        <div className='container grid gap-10 md:grid-cols-2 md:divide-x md:divide-neutral-800'>
+        {/* content */}
+        <div >
+            <h2>Get In Touch</h2>
+            <p className='mt-3.5 mb-7'>
+                Ready to work on your next project. Let's discuss how I can help bring your ideas to life.
+            </p>
+            {/* List */}
+            <ul>
+                {contactItems.map((item)=> (
+                    <li key={item.id} className='flex items-center gap-1.5'>
+                        <p className='text-white font-semibold'>{item.label}</p>
+                        <a href="#">{item.link}</a>
+
+                    </li>
+                    
+                ))}
+            </ul>
+
+            {/* Social Profiles */}
+
+            <div className="flex items-center gap-2 mt-6">
+                <button className='hover:text-neutral-300 transition-colors'>
+                    <RiLinkedinBoxFill size={30}/>
+                </button>
+                <button className='hover:text-neutral-300 transition-colors'>
+                    <RiGithubFill size={30}/>
+                </button>
+            </div>
+        </div>
+        <div>
+            {/* form */}
+
+        <form action="" className='grid gap-5'>
+            <div className='grid gap-2'>
+                <label htmlFor="name">Name *</label>
+                <input type="text" placeholder='Your name' className='name' required />
+            </div>
+            <div className='grid gap-2'>
+                <label htmlFor="email">Email *</label>
+                <input type="email" placeholder='Your email' className='email' required />
+            </div>
+            <div className='grid gap-2'>
+                {/* Text area */}
+                <label htmlFor="message">Message *</label>
+                <textarea  id="message" placeholder='Message'/>
+
+            </div>
+        </form>
+        </div>
+        </div>
+    </section>
+  )
+}
+
+export default Contact
