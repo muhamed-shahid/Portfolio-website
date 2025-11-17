@@ -135,16 +135,16 @@ export const contactItems = [
   {
     id: 1,
     label: "Email:",
-    link: "alexchen.dev@gmail.com",
+    link: "muhamedshahid7860@gmail.com",
   },
   {
     id: 2,
     label: "Phone:",
-    link: "+1 (415) 892-7643",
+    link: "+919567108723",
   },
   {
     id: 3,
     label: "Location:",
-    link: "San Francisco, CA",
+    link: "Kannur, Kerala, India",
   },
 ];

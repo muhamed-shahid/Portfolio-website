@@ -33,7 +33,7 @@ body {
   h2 {
     @apply text-2xl  lg:text-4xl font-semibold;
   }
-  .input {
+  input {
     @apply h-12 w-full border border-neutral-800 indent-4 py-2;
   }
   button {

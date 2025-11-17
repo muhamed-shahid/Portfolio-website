@@ -41,7 +41,11 @@ const Contact = () => {
         <form action="" className='grid gap-5'>
             <div className='grid gap-2'>
                 <label htmlFor="name">Name *</label>
-                <input type="text" placeholder='Your name' className='name' required />
+                <input
+                 type="text" 
+                 placeholder='Your name' 
+                 className='name' 
+                 required />
             </div>
             <div className='grid gap-2'>
                 <label htmlFor="email">Email *</label>
@@ -50,9 +54,10 @@ const Contact = () => {
             <div className='grid gap-2'>
                 {/* Text area */}
                 <label htmlFor="message">Message *</label>
-                <textarea  id="message" placeholder='Message'/>
+                <textarea  id="message" placeholder='Message' className='h-40 border border-neutral-800 indent-4 py-2 resize-none' required/>
 
             </div>
+            <button className="primary-btn max-w-max">Send Message</button>
         </form>
         </div>
         </div>
