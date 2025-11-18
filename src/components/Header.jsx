@@ -1,10 +1,29 @@
-import React, { useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import { navItems } from '../constant/data'
 
 const Header = () => {
     const [isOpen,setIsopen] = useState(false)
+    const headerRef = useRef(null)
+
+useEffect(()=>{
+    const handleScroll = () => {
+        if(window.scrollY > 100){
+            headerRef.current.classList.add("active")
+        }
+        else{
+            headerRef.current.classList.remove("active")
+        }
+    }
+
+    window.addEventListener('scroll',handleScroll)
+
+    return ()=>{
+        window.removeEventListener("scroll" ,handleScroll)
+    }
+},[])
+
   return (
-    <header className='header'>
+    <header ref={headerRef} className='header'>
         <div className="container flex items-center justify-between">
             {/* logo */}
             <a href="#" className='text-3xl font-semibold'>Shahid</a>
