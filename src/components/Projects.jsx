@@ -2,18 +2,29 @@ import React from 'react'
 import { Carousel } from './ui/carousel'
 import { ProjectsItems } from '../constant/data'
 
+
+// motion
+
+import { motion } from 'motion/react'
+import { fadeIn, fadeInUp, staggerContainer } from './motion/animation'
+
 const Projects = () => {
   return (
     <section id='projects'>
-        <div className="container">
+        <motion.div 
+        variants={staggerContainer}
+                  initial='hidden'
+                  whileInView='show'
+                  viewport={{once: true}}
+                  className="container">
             {/* Title */}
-            <h2>Recent Projects</h2>
+            <motion.h2 variants={fadeInUp}>Recent Projects</motion.h2>
             {/* Card wrapper */}
-            <div className='relative overflow-hidden w-full h-full py-20'>
+            <motion.div variants={fadeIn} className='relative overflow-hidden w-full h-full py-20'>
                 <Carousel slides={ProjectsItems}/>
-            </div>
+            </motion.div>
 
-        </div>
+        </motion.div>
     </section>
   )
 }

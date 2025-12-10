@@ -20,7 +20,7 @@ export const fadeIn = {
         filter:"blur(0)",
         transition:{
             duration:0.7,
-            ease:"easeIn"
+            ease:"easeIn",
         }
     }
 }
@@ -32,11 +32,12 @@ export const fadeInUp = {
     },
 
     show:{
+        y:0,
         opacity:1,
         filter:"blur(0)",
         transition:{
             duration:0.7,
-            ease:"easeOut"
+            ease:"easeOut",
         }
     }
 }
