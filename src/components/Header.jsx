@@ -5,6 +5,13 @@ const Header = () => {
     const [isOpen,setIsopen] = useState(false)
     const headerRef = useRef(null)
 
+    const [activeLink , setActiveLink] = useState(navItems[0].id)
+
+    const activeLinkClick = (id)=>{
+        setActiveLink(id)
+        setIsopen(false)
+    }
+
 useEffect(()=>{
     const handleScroll = () => {
         if(window.scrollY > 100){
@@ -36,10 +43,11 @@ useEffect(()=>{
                     {navItems.map(item=>(
                         <li key={item.id}>
                             <a href={item.href}
-                             className='text-lg y-3 relative after:absolute
+                             className={`text-lg y-3 relative after:absolute
                               after:bottom-0 after:left-0
                               after:bg-white after:w-0 after:h-0.5
-                               after:rounded hover:after:w-full after:transition-[width] duration-300 '>{item.label}</a>
+                               after:rounded hover:after:w-full after:transition-[width] duration-300 ${activeLink === item.id ? "after:w-full" : ""}`} 
+                               onClick={()=>handleLinkClick(item.id)}>{item.label}</a>
                         </li>
                     ))}
                 </ul>
@@ -48,10 +56,10 @@ useEffect(()=>{
              <ul className='hidden lg:flex gap-8 items-center'>
                     {navItems.map(item=>(
                         <li key={item.id}>
-                            <a href={item.href} className='text-lg y-3 relative after:absolute
+                            <a href={item.href} className={`text-lg y-3 relative after:absolute
                               after:bottom-0 after:left-0
                               after:bg-white after:w-0 after:h-0.5
-                               after:rounded hover:after:w-full after:transition-[width] duration-300 '>{item.label}</a>
+                               after:rounded hover:after:w-full after:transition-[width] duration-300  ${activeLink === item.id ? "after:w-full" : ""}`}  onClick={()=>handleLinkClick(item.id)}>{item.label}</a>
                         </li>
                     ))}
                 </ul>

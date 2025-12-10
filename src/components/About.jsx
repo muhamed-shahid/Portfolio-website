@@ -3,7 +3,7 @@ import { aboutItems } from '../constant/data'
 
 const About = () => {
   return (
-    <section className='section bg-secondary-clr'>
+    <section className='section bg-secondary-clr' id='about'>
         <div className="container">
             <h2>About me</h2>
             <p className="mt-3 mb-9">
