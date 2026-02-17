@@ -110,24 +110,28 @@ export const ProjectsItems = [
     title: "Portfolio Website",
     src: "/images/portfolio.jpg",
     text: "A responsive portfolio website built with React to showcase projects, skills, and experience in a clean, modern UI. Features smooth navigation, reusable components, and dynamic content rendering. Designed to highlight personal branding and provide a seamless user experience.",
+    github: "https://github.com/muhamed-shahid/Portfolio-website",
   },
   {
     id: 2,
     title: "To-do List App",
     src: "/images/todo.png",
     text: "A clean and interactive To-Do List app built using vanilla JavaScript. It allows users to add, edit, delete, and mark tasks as completed. Tasks are stored in localStorage so the list stays saved even after refreshing.",
+    github: "https://github.com/muhamed-shahid/todo-list",
   },
   {
     id: 3,
     title: "Coffee Website",
     src: "/images/coffee.jpg",
     text: "A visually appealing coffee website created with HTML, CSS, and JavaScript. Includes a dynamic menu, animated elements, and interactive features like a mobile-friendly navigation bar. Focused on aesthetics and smooth user interaction.",
+    github: "https://github.com/muhamed-shahid/coffee-website",
   },
   {
     id: 4,
     title: "Weather App",
     src: "/images/weatherapp.png",
     text: "A lightweight JavaScript weather app that provides instant weather information using fetch API. Includes error handling, city search, and a minimal, user-friendly interface. Optimized for fast performance and smooth experience.",
+    github: "https://github.com/muhamed-shahid/weather-app",
   },
 ];
 

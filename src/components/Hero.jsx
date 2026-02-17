@@ -22,7 +22,7 @@ const Hero = () => {
             <motion.div variants={fadeIn}>
             <BackgroundGradient className="w-70 h-70 lg:w-80 lg:h-80 rounded-full bg-zinc-900">
             <figure className='rounded-full overflow-hidden'>
-                <img src="/images/avatar.png" alt="Muhamed Shahid"  width={452} height={452}/>
+                <img src="/images/portfolio_hero.png" alt="Muhamed Shahid"  width={452} height={452}/>
             </figure>
             </BackgroundGradient>
             </motion.div>
@@ -40,7 +40,7 @@ const Hero = () => {
               </motion.div>
               {/* btn wrapper */}
               <motion.div variants={fadeInUp} className="mt-10 flex items-center justify-center flex-wrap gap-5">
-                <Button label="Download CV" classes="primary-btn" icon/>
+                <Button label="Download CV" classes="primary-btn" icon href="public\Shahid-Resume.pdf" download="Muhamed_Shahid_CV.pdf"/>
                 <Button label="Let's Collaborate" classes="secondary-btn"/>
               </motion.div>
             </div>
