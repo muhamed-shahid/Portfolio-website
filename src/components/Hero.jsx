@@ -33,7 +33,7 @@ const Hero = () => {
 
               <motion.div variants={fadeIn} className="flex items-center justify-center gap-5">
                 {heroIcons.map(icon => (
-                  <a href="#" target='-blank' className='hover:text-indigo-400 transition-colors'>
+                  <a key={icon.id} href={icon.href} target="_blank" rel="noopener noreferrer" className='hover:text-indigo-400 transition-colors'>
                     <icon.icon size={30}/>
                   </a>
                 ))}
@@ -41,7 +41,7 @@ const Hero = () => {
               {/* btn wrapper */}
               <motion.div variants={fadeInUp} className="mt-10 flex items-center justify-center flex-wrap gap-5">
                 <Button label="Download CV" classes="primary-btn" icon href="public\Shahid-Resume.pdf" download="Muhamed_Shahid_CV.pdf"/>
-                <Button label="Let's Collaborate" classes="secondary-btn"/>
+                <Button  href="#contact" label="Let's Collaborate" classes="secondary-btn"/>
               </motion.div>
             </div>
         

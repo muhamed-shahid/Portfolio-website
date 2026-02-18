@@ -1,6 +1,7 @@
 import {
   RiFacebookBoxFill,
   RiGithubFill,
+  RiInstagramFill,
   RiLinkedinFill,
 } from "@remixicon/react";
 
@@ -36,14 +37,16 @@ export const heroIcons = [
   {
     id: 1,
     icon: RiLinkedinFill,
+    href: "https://www.linkedin.com/in/muhamed-shahid",
   },
-  {
-    id: 2,
-    icon: RiFacebookBoxFill,
-  },
+  // {
+  //   id: 2,
+  //   icon: RiInstagramFill,
+  // },
   {
     id: 3,
     icon: RiGithubFill,
+    href: "https://github.com/muhamed-shahid",
   },
 ];
 
