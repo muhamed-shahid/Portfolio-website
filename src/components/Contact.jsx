@@ -53,7 +53,7 @@ const Contact = () => {
             {/* Social Profiles */}
 
             <motion.div variants={fadeIn} className="flex items-center gap-2 mt-6">
-                <a href="https://www.linkedin.com/in/muhamed-shahid" target="_blank" rel="noopener noreferrer" className='hover:text-neutral-300 transition-colors' aria-label="LinkedIn">
+                <a href="https://www.linkedin.com/in/muhamed-shahid-p" target="_blank" rel="noopener noreferrer" className='hover:text-neutral-300 transition-colors' aria-label="LinkedIn">
                     <RiLinkedinBoxFill size={30}/>
                 </a>
                 <a href="https://github.com/muhamed-shahid" target="_blank" rel="noopener noreferrer" className='hover:text-neutral-300 transition-colors' aria-label="GitHub">

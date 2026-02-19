@@ -37,7 +37,7 @@ export const heroIcons = [
   {
     id: 1,
     icon: RiLinkedinFill,
-    href: "https://www.linkedin.com/in/muhamed-shahid",
+    href: "https://www.linkedin.com/in/muhamed-shahid-p",
   },
   // {
   //   id: 2,
